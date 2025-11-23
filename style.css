@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #1a1a1a;
+    background: #273024;
+    background: radial-gradient(circle, rgb(18, 22, 17) 17%, rgba(22, 41, 26, 1) 34%, rgba(25, 82, 46, 1) 47%, rgba(40, 84, 57, 1) 57%, rgba(32, 99, 35, 1) 69%, rgba(32, 122, 29, 1) 83%, rgba(116, 148, 0, 1) 97%);
+}
+h1 {
+    font-size: 80px;
+    line-height: 1.4;
+    color: white;
+}
+h2{
+    font-size: 30px;
+    line-height: 1.4;
+    color: white;
+}
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.choose, .choosetitle {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.choosetitle{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 345px;
+}
+
+.choosetitle div {
+    width: 20vw;     
+    min-width: 200px;
+}
+
+.choosetitle a {
+    background-color: rgb(22, 28, 23);
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 30px 40px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.choosetitle a:hover {
+    background-color: rgb(14, 69, 20);
+    margin-bottom: 30px;
+}
+
+.choose{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 480px;
+}
+
+.choose div {
+    width: 20vw;  
+    min-width: 200px;
+}
+
+.choose a {
+    background-color: rgb(22, 28, 23);
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 30px 40px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.choose a:hover {
+    background-color: rgb(14, 69, 20);
+    margin-bottom: 30px;
+}
+
+.choose-final {
+    margin-left: 350px;  
+    transform: translateX(100px);
+}
+
+.title-box {
+    background-color: rgba(22, 41, 26, 0.85);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.swing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+
+.house{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.irrigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.train{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic4.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.tree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.stairs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic6.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.botans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic7.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.mountains{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic8.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.bikes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic9.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.mom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pic10.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+}
+.began {
+    opacity: 0.3;
+    color: black;
+    transition: all 5s;
+}
+.began:hover {
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+}
+
+.shout {
+    display: inline-block;
+    transform: scale(0.7);
+    transition: all 5s;
+}
+.shout:hover {
+    transform: scale(3,5) translate(50px,10px);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.shake {
+  opacity: 0.7;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.shake:active {
+  opacity: 1;
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-3px);}
+  50% {transform: translateX(3px);}
+  75% {transform: translateX(-3px);}
+  100% {transform: translateX(0);}
+}
+.shout-mend {
+    display: inline-block;
+    transform: scale(0.7);
+    animation: mendPulse 3s infinite;
+}
+
+@keyframes mendPulse {
+    0% {
+        transform: scale(0.7) translate(0,0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3,5) translate(50px,10px);
+        opacity: 0;
+    }
+}
+
+
+.pulse {
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+.spin {
+  color: black;
+  opacity: .5;
+  display: inline-block;
+  cursor: pointer;
+  transition: 3s, transform 2s;
+}
+
+.spin:hover {
+  color: #ffffff;
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.fall {
+    display: inline-block;
+    transform: scale(0.7);
+    transition: all 5s;
+}
+
+.fall:hover {
+    transform: scale(3,5) translateY(150px); 
+    opacity: 0;
+    cursor: pointer;
+}
+.botans {
+    background-image: url(images/pic7.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: fadeToColor 5s forwards;
+}
+
+@keyframes fadeToColor {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}.hover-own {
+  color: white;
+  opacity: .4;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transform: scale(0.5);
+  transition: transform 3s;
+}
+
+.hover-own:hover {
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.click-deep {
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 1s, opacity 1s;
+}
+
+.click-deep:active {
+  color: white;
+  transform: scale(0);
+  opacity: 0;
+}
+.appear{
+  font-size: 20px;
+  opacity: 0.4;
+  transform: translateY(20px);
+  transition: 3s;
+  cursor: pointer;
+}
+
+.appear:hover {
+    font-size: 30px;
+    color: white;
+    opacity: 1;
+    transform: translateY(0);
+}
